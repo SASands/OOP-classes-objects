@@ -38,21 +38,25 @@ class AlarmClock:
 
     def alarm_name(self):
         self.name = input ("Please name your alarm.:  ")
+        lowered_input = input.lower()
         print ("Alarm name is: ", self.name)
         pass
    
     def set_time(self):
         self.time = input ("Please set the time.:  ")
+        lowered_input = input.lower()
         print ("The current time is set to: ", self.time)
         pass
   
     def new_time(self):
         self.change_time = input ("What time would you like to change it to?:  ")
+        lowered_input = input.lower()
         print ("The time has been changed to:  ", self.change_time)
         pass
   
     def alarm_on_off(self):
-        input("Would you like to turn your alarm on?  ")
+        input("Would you like your on or off, type 'on' or 'off'?   ")
+        lowered_input = input.lower() 
         if self.is_on == True:
             print ("Your alarm is on!")
         else:
